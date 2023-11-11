@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Playback Speed Changer",
+  "version": "1.0",
+  "description": "Change video playback speed on any website.",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
